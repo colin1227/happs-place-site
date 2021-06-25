@@ -12,6 +12,35 @@ h3 {
   text-align: center;}
 
 
+.header {
+  height: 100%;
+  width: 100%;
+
+  padding: 10px 0;
+
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-width: 2px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source:
+    linear-gradient(to right, grey, white, grey);
+
+  margin: 0 auto;
+
+  background: linear-gradient(to bottom, white 55%, rgba(0, 174, 255, 0.5));
+  
+  text-align: center;
+}
+.top-text-stuff {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  height: 100% !important;
+}
+  
+
 /* Aesthetic */
 .bar-gradient {
   width: 80%;
@@ -109,7 +138,7 @@ b.white-text {
   I.) Top of page; Header
 */
 .header {
-  background: linear-gradient(to bottom, white 55%, rgba(0, 174, 255, 0.5));
+  background: linear-gradient(to bottom, white 55%, rgba(255, 157, 0, 0.911));
   height: 100%;
   width: 100%;
   border-top: 0 !important;
@@ -142,7 +171,7 @@ b.white-text {
 }
 .slogan {
   padding: 0px auto 10px auto;
-  color: #e2725b;
+  color: lightslategray;
   width: 95%;
   text-align: center;
   margin: 0 auto;
@@ -151,41 +180,6 @@ b.white-text {
   margin: 10px auto;
 }
 
-/* Parent div */
-.reasons-to-buy {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-
-  height: auto;
-  min-height: 100vh;
-  
-  padding: 10px 0;}
-
-/* child elements */
-.reason {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 95%;
-  min-height: 15vh;
-  height: auto;
-
-  border-width: 2px;
-  border-style: solid;
-  border-image-slice: 1;
-  border-image-source:
-    linear-gradient(to right, grey, white, grey);
-
-  margin: 0 auto;}
-
-/* images  */
-.h100-w100 {
-  width: 100%;
-  height: 100%;
-}
 
 .links {
   display: flex;
@@ -197,8 +191,8 @@ b.white-text {
 }
 .links a {
   color: white;
-  background-color: rgba(0,0,255,0.3);
-  border-color: #e2725b;
+  background-color: rgb(255, 157, 0);
+  border-color: rgba(0,0,255,0.3);
   border-width: 1px;
   border-style: solid;
   border-radius: 10%/20%;
@@ -224,9 +218,62 @@ b.white-text {
   parental width limits will have some effect(TODO: test it) -- */
   padding: 10px 0;
   margin: 0 auto;}
-.div-0 {
-  position: relative;}
 
+/* second content block(first is the carosel */
+.list-options {
+  background: rgba(0,0,0, 0.5);
+}
+.list-title {
+  font-size: 24px;
+  text-decoration: underline;
+}
+.list-options h3, 
+.list-options ul li {
+  color: white;
+}
+
+.list-options ul li {
+  font-size: 18px;
+}
+
+.options-cta {
+  font-size: 18px;
+  color: white;
+}
+
+.contact-link {
+  color: blue;
+}
+
+/* end second */
+
+
+/* third content block */
+.shape {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent, rgba(0, 0, 0, 0.5));
+}
+
+.sr {
+  height: 100%;
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;}
+.s {
+  width: 55%;
+  height: auto;
+
+  margin: 5%;}
+.r {
+  color: white;
+  width: 90%;
+  height: 35%;
+  overflow: hidden;
+  background: rgba(150,150,150, 0.533);}
+
+/* end third */
 
 /* n.) Foot o' page */
 .footer {
@@ -242,37 +289,20 @@ b.white-text {
 .time-link {
   color: white;}
 
-/* n.) Background Image based classes */
-
-.background-image-component {
-  position: relative;
-  height: 75vh;
-  margin: 0;
-  width: 100vw;
-  overflow: hidden;}
-.background-image {
-  position: absolute;
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-  width: 100%;}
-.img-default {
-  background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
-  overflow: hidden;}
-
-
   
 /* n.) Screen changes for Desktop */
 @media screen and (min-width: 600px) {
-  
-  .div-intro .text-div h2 {
-    width: 55%;}
-  
-  .div-intro .text-div div {
-    width: 45%;
-    font-size: 22px;}}
+  body {
+    background: rgba(20, 20, 20, 0.8);
+  }
+
+  .all-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+}
 
 /* n.) Testing */
 
