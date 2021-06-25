@@ -1,0 +1,110 @@
+@import "./imports.css";
+
+
+/* move and explain !important */
+.eh {
+  font-size: 36px !important;
+  font-weight: 700 !important;
+
+  width: 100% !important;
+  height: 36px !important;
+
+}
+
+.option:first-child .top-text-stuff * {
+  padding-left: 5px;
+}
+
+.option:last-child .top-text-stuff * {
+  padding-right: 15px;
+}
+
+/* move */
+.eh-sub {
+  font-size: 24px !important;
+}
+
+
+/* rename */
+.center-text { 
+  text-align: center;
+}
+
+/* explain why */
+.option {
+  min-height: auto !important;
+  margin-bottom: 10px !important;
+}
+
+/* explain why */
+.shape {
+  height: auto !important;
+  background: linear-gradient(90deg, #4267B2 40%, orange);
+  width: 100% !important;
+}
+
+/* why !important */
+.top-text-stuff {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* move */
+.option:nth-child(2) .top-text-stuff .eh {
+  height: auto;
+  text-align: center;
+}
+
+.navigationl {
+  padding: 0 0 5px 0 !important;
+}
+
+/* move */
+.dropdown {
+  height: 10% !important;
+  border: solid 2px white;
+  border-radius: 15%;
+  margin: auto !important;
+  background-position: white;
+}
+
+/* move */
+.option:first-child .shape {
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* move */
+.option:last-child .shape {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  text-align: end;
+}
+
+/* Footer */
+
+.footer {
+  height: 50vh;
+}
+.footer * {
+  margin: auto;
+}
+.footer a {
+  color: white;
+  margin: 5px auto !important;
+}
+.hyper-link {
+  width: 100%;
+
+  text-align: center;
+}
+.contact-us {
+  margin: 0 auto;
+}
+

@@ -1,0 +1,283 @@
+
+@import "./imports.css";
+/* 
+  Page 1 - max-height: 350vh
+
+  Default CSS
+*/
+
+h3 {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;}
+
+
+/* Aesthetic */
+.bar-gradient {
+  width: 80%;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, transparent, black 20%, black 80%, transparent);
+  border-style: solid;
+  border-width: 2px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;}
+
+.risen-border-faded-background { 
+  background-color: grey;
+  border: solid blue 2px;}
+
+/*  random */
+
+.gradient-grey-middle {
+  background: linear-gradient(to right, transparent, rgba( 70, 55, 70, .33), transparent);
+}
+
+.laf {
+  background: linear-gradient(to right, rgba( 70, 55, 70, .33), transparent, rgba( 70, 55, 70, .33));
+}
+
+.center-text {
+  text-align: center;
+  width: 100%;
+}
+.text-div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.width-90 {
+  width: 90%;
+}
+.width-full {
+  width: 100%;
+}
+
+/* random pt.2 */
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+.custom-1 {
+  margin: 0 auto;
+}
+.x-padded {
+  padding: 0px 10px 0px 10px;
+}
+
+
+/* Hook classes? */
+
+.hook-text {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px auto 10px auto;
+}
+.hook-margin {
+  text-align: center;
+  width: 95%;
+  margin: 20px auto 20px auto;
+}
+.hook-margin-y-axis-5-x-axis-0 {
+  text-align: center;
+  width: 100%;
+  margin: 5px 0 5px 0;
+}
+.hook-padding {
+  text-align: center;
+  width: 95%;
+  padding: 20px auto 20px auto;
+}
+
+/* margins?? */
+.small-margin {
+  width: 90%;
+  margin: 20px auto auto auto;
+}
+
+b.white-text {
+  margin: 0 auto 5px auto;
+  font-weight: 900;
+  text-decoration: underline;}
+.b-i {
+  font-weight: bold;
+  font-style: italic;}
+.forword {
+  margin: 10px auto;}
+
+/* 
+  I.) Top of page; Header
+*/
+.header {
+  background: linear-gradient(to bottom, white 55%, rgba(0, 174, 255, 0.5));
+  height: 100%;
+  width: 100%;
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-width: 2px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source:
+    linear-gradient(to right, grey, white, grey);
+}
+.top-text {
+  width: 95%;
+  height: auto;
+  margin: 10px auto 0 auto;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px auto auto auto;
+  margin: 0 auto auto auto;
+  width: 100%;
+  height: 5vh;
+}
+
+.buisness-name {
+  color: navy;
+  margin: 0;
+}
+.slogan {
+  padding: 0px auto 10px auto;
+  color: #e2725b;
+  width: 95%;
+  text-align: center;
+  margin: 0 auto;
+}
+.small-overview {
+  margin: 10px auto;
+}
+
+/* Parent div */
+.reasons-to-buy {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+
+  height: auto;
+  min-height: 100vh;
+  
+  padding: 10px 0;}
+
+/* child elements */
+.reason {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 95%;
+  min-height: 15vh;
+  height: auto;
+
+  border-width: 2px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source:
+    linear-gradient(to right, grey, white, grey);
+
+  margin: 0 auto;}
+
+/* images  */
+.h100-w100 {
+  width: 100%;
+  height: 100%;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 4px auto;
+  height: auto;
+  width: 65%;
+
+}
+.links a {
+  color: white;
+  background-color: rgba(0,0,255,0.3);
+  border-color: #e2725b;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10%/20%;
+  padding: 2px 6px 2px 6px;
+  text-decoration: none;
+}
+.links a:last-child {
+  border-radius: 25/5%;
+}
+
+
+/* II.) Main content */
+.home-info {
+  background-color: white;
+  height: auto;
+  position: relative;}
+
+.header {
+  text-align: center;
+  height: auto;
+  width: 100%;
+  /* -- 100vw !== 100%; not all rectangles are sqares.
+  parental width limits will have some effect(TODO: test it) -- */
+  padding: 10px 0;
+  margin: 0 auto;}
+.div-0 {
+  position: relative;}
+
+
+/* n.) Foot o' page */
+.footer {
+  width: 100%;
+  height: auto;
+
+  padding: 2px 0;
+  margin: 0 auto;
+
+  background: navy;}
+
+/* availability hours */
+.time-link {
+  color: white;}
+
+/* n.) Background Image based classes */
+
+.background-image-component {
+  position: relative;
+  height: 75vh;
+  margin: 0;
+  width: 100vw;
+  overflow: hidden;}
+.background-image {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;}
+.img-default {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  overflow: hidden;}
+
+
+  
+/* n.) Screen changes for Desktop */
+@media screen and (min-width: 600px) {
+  
+  .div-intro .text-div h2 {
+    width: 55%;}
+  
+  .div-intro .text-div div {
+    width: 45%;
+    font-size: 22px;}}
+
+/* n.) Testing */
+
+/* 06/24 */
+
+b {
+  color: orange;
+}

@@ -1,0 +1,177 @@
+
+@import "./imports.css";
+
+/* 
+  Broad page element changes
+*/
+
+h3 {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;}
+
+/* 
+  I.) Top of page; Header
+*/
+.header {
+  height: 100%;
+  width: 100%;
+
+  padding: 10px 0;
+
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-width: 2px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source:
+    linear-gradient(to right, grey, white, grey);
+
+  margin: 0 auto;
+
+  background: linear-gradient(to bottom, white 55%, rgba(0, 174, 255, 0.5));
+  
+  text-align: center;
+}
+.top-text-stuff {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* !!import!! */
+
+.buisness-name {
+  color: navy;
+  margin: 0;
+}
+.slogan {
+  padding: 0px auto 10px auto;
+  color: #e2725b;
+  width: 95%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+/* !!import!! */
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px auto auto auto;
+  margin: 0 auto auto auto;
+  width: 100%;
+  height: 5vh;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin: 8px auto 4px auto;
+  height: auto;
+  width: 65%;
+
+}
+.links a {
+  color: white;
+  background-color: rgba(0,0,255,0.3);
+  border-color: #e2725b;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10%/20%;
+  padding: 2px 6px 2px 6px;
+  text-decoration: none;
+}
+.links a:last-child {
+  border-radius: 25/5%;
+}
+
+
+/* II */
+.home-info {
+  background-color: white;
+  height: auto;
+  position: relative;}
+
+
+/* second content block(first is the carosel */
+.list-options {
+  background: rgba(0,0,0, 0.5);
+}
+.list-title {
+  font-size: 24px;
+  text-decoration: underline;
+}
+.list-options h3, 
+.list-options ul li {
+  color: white;
+}
+
+.list-options ul li {
+  font-size: 18px;
+}
+
+.options-cta {
+  font-size: 18px;
+  color: white;
+}
+
+.contact-link {
+  color: blue;
+}
+
+/* third content block */
+.shape {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent, rgba(0, 0, 0, 0.5));
+}
+
+.sr {
+  height: 100%;
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;}
+.s {
+  width: 55%;
+  height: auto;
+
+  margin: 5%;}
+.r {
+  color: white;
+  width: 90%;
+  height: 35%;
+  overflow: hidden;
+  background: rgba(150,150,150, 0.533);}
+
+/* III */
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 2px 0;
+  margin: 0 auto;
+  background: navy;}
+
+/* availability hours */
+.time-link {
+  color: white;}
+
+/* maintain general mobile sizings */
+
+/* n.) Screen changes for Desktop */
+@media screen and (min-width: 600px) {
+  
+  body {
+    background: rgba(20, 20, 20, 0.8);
+  }
+  .all-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }}

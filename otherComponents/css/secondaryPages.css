@@ -1,0 +1,355 @@
+
+@import "./imports.css";
+
+/* maintain general mobile sizings */
+@media screen and (min-width: 600px) {
+  body {
+    background: black;
+  }
+  .all-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+  .main-options {
+    width: 100% !important;
+  }
+  .option {
+    width: 100%;
+  }
+}
+
+h3 {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;}
+
+/*** I: Header ***/
+.header-container {
+  background: linear-gradient(to bottom, rgba(185, 185, 185, .8) 55%, rgba(0,0,255,0.3));
+  height: 100%;
+  width: 100%;}
+
+
+/** I.a: Text **/
+.header-text {
+  width: 95%;
+  height: auto;
+  margin: auto;}
+.buisness-name {
+  color: navy;
+  margin: 0;}
+.slogan {
+  padding: 0px auto 10px auto;
+  color: white;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/** I.b: hyperlinks **/
+.navigation {
+  display: flex;
+  align-items: center;
+  margin: -2px auto auto auto;
+
+  width: 100%;
+  height: 5vh;
+  background: rgba(0,0,255,0.3);}
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  height: auto;
+  width: 65%;
+
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, transparent, black 20%, black 80%, transparent);
+  border-style: solid;
+  border-width: 2px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;}
+.links a {
+  color: white;
+  border-color: grey;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10%/20%;}
+.links a:last-child {
+    border-radius: 25/5%;}
+
+.descript {
+  text-align: center;
+  font-weight: 900 !important;
+  font-size: 24px !important;
+  text-decoration: underline !important;
+}
+
+/* II */
+
+.main-options {
+  position: relative;
+  
+  width: 100vw;
+  height: auto;
+
+  margin: 0;
+  border-width: 2px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source:
+    linear-gradient(to right, grey, white, grey);
+
+  border-left: 0;
+  border-right: 0;
+  background: navy;}
+.option {
+  position: relative;
+
+  min-height: 375px;
+  width: 100%;
+  min-height: 375px;
+  height: 100%;
+  
+  border-width: 2px;
+  border-style: solid;
+  border-left: 0;
+  border-right: 0;
+  border-color: white;
+}
+
+.shape {
+  height: 281.25px;
+  width: 281.25px;
+  margin: 0 auto;
+}
+.shape-name {
+  text-align: center;
+  width: 100%;
+  height: 25%;
+  font-size: xx-large;
+  text-decoration: underline;
+  margin: 0 auto;
+}
+
+/* onScroll. change name */
+.hovering {
+  background: navy;
+  animation-name: expand-grey;
+
+  animation-duration: .25s;
+  animation-iteration-count: 1;
+
+  animation-direction:alternate;}
+
+@keyframes expand-grey {
+  0% {
+    height: 20vh;
+    width: 45vw;
+    background: navy;
+  }
+
+  to {
+    height: 22vh;
+    width: 50vw;
+    background: rgba(255, 255, 255, 0.40);
+  }}
+
+
+/*** III ***/
+.footer {
+  background: navy;}
+
+/* Two Squares */
+.s1 {
+  width: 45%;
+  height: 45%;
+
+  margin: 5% 5% 5% auto;
+  background-size: contain;
+
+  background-image: url("../picsNgifs/rose.jpeg");}
+.s2 {
+  width: 45%;
+  height: 45%;
+
+  margin: auto 5% 5% 5%;
+  background-size: contain;
+  background-image: url("../picsNgifs/vase.jpeg");}
+
+
+
+/* Square and Rectangle */
+.sr {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;}
+
+.s {
+  width: auto;
+  height: 55%;
+
+  margin: 5%;
+}
+
+.r {
+  color: black;
+  width: 90%;
+  height: 35%;
+  overflow: hidden;
+  background: white;}
+
+/* 3 long rectangles */
+.option:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+}
+
+.option:nth-child(4) .shape {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.option:nth-child(2) .shape {
+  display: flex;
+  justify-content: center;
+}
+
+.tree {
+  margin: 5px 0;
+  height: 100%;
+  width: auto;
+}
+
+.long {
+  width: 85%;
+  height: 20%;
+
+  margin: auto;
+}
+.long:first-child {
+  background-position: center center !important;
+  background: url('../picsNgifs/busch.jpeg');
+}
+.long:nth-child(2) {
+  background-position: left 65% !important;
+  background: url('../picsNgifs/ciggymate.jpeg');
+}
+.long:last-child {
+  background-position: center 72% !important;
+  background: url('../picsNgifs/yyyee.jpeg');
+}
+
+/* video block */
+.vid {
+  background-repeat: no-repeat;
+  border: solid white 1px;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../picsNgifs/Screen\ Shot\ 2021-06-14\ at\ 1.14.34\ AM.gif");
+  margin: 15% 2.5%;
+  height: 60%;
+  width: 95%;}
+
+/* 2 rectangles; 1 big, 1 small */
+
+.option:nth-child(6) .shape {
+  display: flex;
+
+  justify-content: space-around;
+  align-content: space-around;
+  flex-direction: column;
+}
+.big-rect {
+  width: 67%;
+  height: 40%;
+
+  margin: 0 auto;
+
+  background-position: center center !important;
+  background: url('../picsNgifs/karaoke.jpeg');}
+.small-rect {
+  width: 65%;
+  height: 30%;
+  
+  margin: 0 auto;
+
+  background-position: center 35% !important;
+  background: url('..//picsNgifs/bartings.jpeg');}
+
+/** III **/
+.network-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 65%;
+  height: 12%;
+
+  margin: 0 auto 0 auto;
+
+  border-width: 0;
+  border-radius: 10%/40%;}
+
+.socials {
+  display: flex;
+
+  justify-content: space-around;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+  border-radius: 10%/50%;
+
+  width: 100%;
+
+  margin: 10px auto 5px auto;}
+.media-icon {
+    background-color: rgba(125, 125, 125, 0.40);
+    border-radius: 15%;
+    border-style: solid;
+    border-width: 1px;}
+
+.time-link {
+  color: white;
+}
+
+/*
+  **DEBUGING**
+  background colors
+*/
+/* 
+.option:nth-child(1) {
+  background: green;
+}
+
+.option:nth-child(2) {
+  background: purple;
+}
+
+.option:nth-child(3) {
+  background: pink;
+}
+
+.option:nth-child(4) {
+  background: yellow;
+}
+
+.option:nth-child(5) {
+  background: tan;
+}
+
+.option:nth-child(6) {
+  background: red;
+} */
+

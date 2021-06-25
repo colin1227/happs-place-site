@@ -1,0 +1,53 @@
+
+@media screen and (min-width: 600px) {
+  
+  body {
+    background: rgba(20, 20, 20, 0.8);
+  }
+
+  .all-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+body {
+  height: auto;
+  margin: 0;
+  font-family: Montserrat, Tahoma, sans-serif;
+  position: relative;}
+ul {
+  margin: 0;}
+
+
+.white-background {
+  background-color: rgba(255, 255, 255, 0.40);
+}
+.grey-faded-background {
+  background-color: rgba(185, 185, 185, 0.40);
+}
+.background-50-50-50-point5 {
+  background-color: rgba(50, 50, 50, 0.5);
+}
+.dark-grey-faded-background {
+  background-color: rgba(125, 125, 125, 0.40);
+}
+.black-gradient-background {
+  background: linear-gradient(rgba(0,0,0, 0.7), transparent);
+}
+.navy-background {
+  background: navy;
+}
+
+.orange-text {
+  color: #e2725b;}
+.white-text {
+  color: white;}
+.navy-text {
+  color: navy;}

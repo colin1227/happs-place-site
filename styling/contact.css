@@ -1,0 +1,194 @@
+
+@import "./imports.css";
+/* 
+  Page 3 - max-height: 150vh
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;}
+
+a {
+  color: blue;}
+
+/* move */
+div.wide.margin-0 {
+  position: relative;
+}
+
+.margin-0 {
+  margin: 0 !important;
+}
+
+.wide {
+  height: auto;
+  width: 100% !important;
+}
+
+.small {
+  width: 10%;
+  height: 10%;
+}
+
+/* Background and Spacing classes */
+
+.white-background {
+  background:rgba(255, 255, 255, .7);}
+
+.dark-grey-background {
+  background-color: rgb(125,125,125);
+}
+.text-definition {
+  color:rgba(255, 255, 255, .8)}
+.testclass {
+  background-color: pink;}
+
+.contact-methods {
+  margin: 5px auto 2.5px auto;
+  height: auto;
+  width: 95%;
+  border-radius: 10%;}
+
+.contact-methods div {
+  color: grey;
+  text-align: center;}
+
+.email-component b {
+  color: white;
+  text-decoration: underline;}
+.email-component span {
+  color: white;
+}
+.email-component {
+  display: flex;
+  flex-direction: column;}
+.email-component * {
+  margin: 2px auto;
+}
+
+.schedule {
+  display: flex;
+  justify-content: center;
+  width: 95vw;
+  margin: 0 auto;
+}
+
+
+
+.text b {
+  text-decoration: underline;}
+.text span {
+  color: white;}
+
+
+.div-headline {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  padding: 0 auto 10px auto;}
+  
+.social-media {
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 65%;
+  height: 12%;
+  margin: 8px auto 8px auto;
+  border-width: 0;
+  border-radius: 10%/40%;}
+/* rename something here */
+.socials {
+  display: flex;
+
+  justify-content: space-around;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+  border-radius: 10%/50%;
+
+  width: 100%;
+
+  margin: 10px auto 5px auto;}
+.social-media-icon {
+  background-color: rgba(125, 125, 125, 0.40);
+  border-radius: 15%;
+  border-style: solid;
+  border-width: 1px;}
+
+
+/*        There is Code here         */
+
+/*                                   */
+
+/* Full Structure Sections: I II III */
+
+
+/* I 25vh */
+.header {
+  background-color: navy;
+
+  margin: 0;
+  width: auto;
+  height: auto;
+  max-height: 25vh;
+  width: 100vw;}
+.head-text {
+  width: 101vw;
+  height: auto;
+  margin: auto;}
+.buisness-name {
+  color: white;
+  margin: 0;}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2px auto auto auto;
+
+  width: 100vw;
+  height: 5vh;
+  background: navy;}
+.navigation .links a {
+
+  padding: 2.5px 5px;
+
+  border-color: #e2725b;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10%/20%;}
+
+
+
+/* II 100vh */
+.contact-info {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: navy;
+  
+  height: auto;
+  min-height: 92vh;
+  width: 100vw;}
+
+.contact-info * {
+  margin: 10px auto;
+  padding: 0;}
+
+
+
+/* III 25vh */
+.footer {
+  max-height: 25vh;
+  min-height: 5vh;
+  width: 100vw;
+  background: navy;}
+
+.footer * {
+  margin: 8px auto;}
