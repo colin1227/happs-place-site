@@ -221,7 +221,7 @@ b.white-text {
 
 /* second content block(first is the carosel */
 .list-options {
-  background: rgba(0,0,0, 0.5);
+  background: rgba(0, 0, 0, 0.75) !important;
 }
 .list-title {
   font-size: 24px;

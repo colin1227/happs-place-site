@@ -30,10 +30,15 @@ h3 {
 
   margin: 0 auto;
 
-  background: linear-gradient(to bottom, white 55%, rgba(0, 174, 255, 0.5));
+  background: linear-gradient(to bottom, white 55%, rgb(255, 196, 0));
   
   text-align: center;
 }
+
+.menu {
+  color: rgb(255, 196, 0);
+}
+
 .top-text-stuff {
   display: flex;
   flex-direction: column;
@@ -100,7 +105,7 @@ h3 {
 
 /* second content block(first is the carosel */
 .list-options {
-  background: rgba(0,0,0, 0.5);
+  background: rgba(0,0,0, 0.75);
 }
 .list-title {
   font-size: 24px;
@@ -143,7 +148,7 @@ h3 {
 
   margin: 5%;}
 .r {
-  color: white;
+  color: black;
   width: 90%;
   height: 35%;
   overflow: hidden;
